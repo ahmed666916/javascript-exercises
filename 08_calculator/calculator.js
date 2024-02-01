@@ -32,6 +32,10 @@ const power = function(num, power) {
 
 
 const factorial = function(num) {
+  if (num === 0) {
+    return 1;
+    
+  }
   let fact = num;
 	for (let i = num - 1; i > 0; i--) {
     fact = fact * i;
