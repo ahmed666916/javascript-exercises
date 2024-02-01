@@ -19,8 +19,12 @@ const sum = function(numArray) {
   return sum;
 };
 
-const multiply = function(num1, num2) {
-  return num1 * num2;
+const multiply = function(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+
+  return array.reduce((product, current) => product * current);
 
 };
 
