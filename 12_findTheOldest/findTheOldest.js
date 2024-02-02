@@ -15,8 +15,13 @@ const findTheOldest = function(people) {
     return name;
 };
 
-function findAge(yearBorn, yearNow) {
-    return yearNow - yearBorn;
+function findAge(yearBorn, yearDeath) {
+    if (!yearDeath) {
+        yearDeath = new Date().getFullYear();
+        
+    }
+
+    return yearDeath - yearBorn;
 }
 
 // Do not edit below this line
